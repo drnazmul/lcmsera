@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "LCMSera"
+  description: "Blog page for LCMSera"
+  navbar:
+    right:
+      - text: Blog
+        href: blog.qmd
+      - icon: facebook
+        href: https://facebook.com/lcmsera
+      - icon: youtube
+        href: https://youtube.com/@lcmsera
+        
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+
+editor: visual
+
