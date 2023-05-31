@@ -2,9 +2,18 @@ project:
   type: website
 
 website:
-  title: "LCMSera"
+  title: "LC-MS era"
+  favicon: img/favicon.png
   description: "Blog page for LCMSera"
+  
   navbar:
+    pinned: true
+    logo: /img/logo.png
+    
+    left:
+      - text: "Courses"
+        href: courses/index.qmd
+    
     right:
       - text: Blog
         href: blog.qmd
@@ -15,7 +24,7 @@ website:
         
 format:
   html:
-    theme: cosmo
+    theme: slate
     css: styles.css
 
 editor: visual
