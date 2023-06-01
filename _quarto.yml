@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "LC-MS era"
+  #title: "LC-MS era"
   favicon: img/favicon.png
   description: "Blog page for LCMSera"
   

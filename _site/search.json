@@ -4,41 +4,20 @@
     "href": "blog.html",
     "title": "We write about the topics you love!",
     "section": "",
-    "text": "Post With Code\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2023\n\n\nHarlow Malloc\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nMay 28, 2023\n\n\nTristan O’Malley\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nThis is a dummy blog posts\n\n\n\n\n\n\n\n123\n\n\nSecond Tag\n\n\n\n\nThis is a test post. In this post, I try out different functionalities\n\n\n\n\n\n\nJun 1, 2022\n\n\nAlbert Rapp\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "courses/index.html",
-    "href": "courses/index.html",
-    "title": "We are currently offering following courses",
-    "section": "",
-    "text": "## HPLC for practical"
+    "text": "The Colorful History and Evolution of Liquid Chromatography: From Tswett to UPLC\n\n\n\n\n\n\n\nHPLC\n\n\nHistory\n\n\n\n\n\n\n\n\n\n\n\nMay 31, 2023\n\n\nNazmul Alam\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "We provide training and consultency services",
+    "title": "LC-MS era",
     "section": "",
-    "text": "About this blog"
+    "text": "LCMS era is a leading training and consulting firm that specializes in providing services on integrating HPLC/UHPLC to pharma, biotech, and instrument companies.\nWith a team of experienced and highly qualified professionals, LCMS era is dedicated to helping organizations integrate HPLC/UHPLC, LC-MS in their laboratories with advice on the purchase, setup, and guiding preventive actions.\nLCMS era is a leading training and consulting firm that specializes in providing expert consulting services on integrating HPLC/UHPLC to pharma, biotech, and instrument companies. With a team of experienced and highly qualified professionals, LCMS era is dedicated to helping organizations integrate HPLC/UHPLC, LC-MS in their laboratories with advice on the purchase, setup, and guiding preventive actions.\nAt LCMS era, we understand that efficient sample preparation techniques and integrating with mass spectrometry are critical components of LC-MS method development for assays and impurity analysis. That’s why we offer expedited LC-MS method development services to ensure that our clients’ analytical challenges are solved in a timely and efficient manner.\nOur principal consultant, Dr. Nazmul Alam, is a highly experienced scientist and trainer with over 12 years of experience in HPLC, Mass Spectrometry, and Analytical Chemistry. Dr. Nazmul has worked as an assistant professor at a university in Bangladesh and has studied at prestigious institutions such as the Tokyo Institute of Technology, Japan, Western University, and Waterloo University in Canada. With his vast experience, Dr. Nazmul is committed to helping organizations develop future skilled workers and solve current analytical challenges.\nAt LCMS era, we believe that effective training and consulting services are critical to the success of any organization. That’s why we provide customized training programs that are tailored to meet the unique needs of our clients. Our training programs cover a range of topics, including HPLC/UHPLC, LC-MS, and sample preparation techniques.\nIn conclusion, LCMS era is a trusted training and consulting firm that provides expert consulting services on HPLC/UHPLC and pharm analysis to pharma, biotech, and instrument companies. With our experienced team and customized training programs, we are committed to helping organizations integrate HPLC/UHPLC, LC-MS in their laboratories and solve their analytical challenges. Contact us today to learn more about our services and how we can help your organization succeed."
   },
   {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
+    "objectID": "posts/history-hplc/index.html",
+    "href": "posts/history-hplc/index.html",
+    "title": "The Colorful History and Evolution of Liquid Chromatography: From Tswett to UPLC",
     "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "posts/test/test.html",
-    "href": "posts/test/test.html",
-    "title": "This is a dummy blog posts",
-    "section": "",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusce luctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus.\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nam suscipit est nec dui eleifend, at dictum elit ullamcorper. Aliquam feugiat dictum bibendum. Praesent fermentum laoreet quam, cursus volutpat odio dapibus in. Fusceluctus porttitor vehicula. Donec ac tortor nisi. Donec at lectus tortor. Morbi tempor, nibh non euismod viverra, metus arcu aliquet elit, sed fringilla urna leo vel purus."
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "The history of liquid chromatography dates back to the early 1900s when Russian botanist Mikhail Semyonovich Tswett invented a method for separating plant pigments using petroleum ether. He called this new technique “chromatography” because the result of the analysis was literally “written in color” along the length of the adsorbent column.\n Forty years later, Archer John Porter Martin and Richard Lawrence Millington Synge published a new type of partition chromatography that used silica gel in columns to separate amino acids, which led to the development of high-performance liquid chromatography (HPLC). In the 1970s, HPLC instruments saw significant improvements in technology, with the ability to develop up to 6,000 psi of pressure and incorporate improved injectors, detectors, and columns.\nFurther advances in instrumentation and column technology were made in 2004 to achieve ultra-performance liquid chromatography (UPLC) technology, with columns containing even smaller 1-micron-diameter particles and instrumentation capable of performing at 100,000 psi. Today, laboratories worldwide use HPLC to identify and quantify non- and semi-volatile chemical components in liquid samples.\nThe evolution of liquid chromatography has come a long way, with continuous research and development leading to significant improvements in performance, resolution, speed, and sensitivity. With the introduction of UPLC and UHPLC, the pressure race continues, providing a glimpse of what we may expect in the future.\nReferences:\n\nRonald E. Majors, LCGC North America, LCGC North America-11-01-2015, Volume 33, Issue 11, Pages: 818-840\nWaters document\nDr. Thorsten Teutenberg, From Tswett’s “Farbschreibung” to modern Chromatography, The analytical Sciece, 25 November 2016"
   }
 ]
