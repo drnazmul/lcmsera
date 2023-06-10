@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nazmul Alam">
+<meta name="dcterms.date" content="2023-06-09">
+
+<title>Understanding (U)HPLC Pumps: Piston vs Plunger and Cam vs Crankshaft Driven Mechanisms</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../courses/index.html">
+ <span class="menu-text">Courses</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://facebook.com/lcmsera"><i class="bi bi-facebook" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/@lcmsera"><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Understanding (U)HPLC Pumps: Piston vs Plunger and Cam vs Crankshaft Driven Mechanisms</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">HPLC</div>
+                <div class="quarto-category">Pumps</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nazmul Alam </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 9, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#pumps-in-uhplc-systems" id="toc-pumps-in-uhplc-systems" class="nav-link active" data-scroll-target="#pumps-in-uhplc-systems">Pumps in (U)HPLC systems</a></li>
+  <li><a href="#mechanism-of-action-understanding-reciprocating-pumps" id="toc-mechanism-of-action-understanding-reciprocating-pumps" class="nav-link" data-scroll-target="#mechanism-of-action-understanding-reciprocating-pumps">Mechanism of Action: Understanding Reciprocating Pumps</a></li>
+  <li><a href="#mechanisms-for-driving-the-pumps-crankshaft-vs.-camshaft" id="toc-mechanisms-for-driving-the-pumps-crankshaft-vs.-camshaft" class="nav-link" data-scroll-target="#mechanisms-for-driving-the-pumps-crankshaft-vs.-camshaft">Mechanisms for Driving the Pumps: Crankshaft vs.&nbsp;Camshaft</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="pumps-in-uhplc-systems" class="level2">
+<h2 class="anchored" data-anchor-id="pumps-in-uhplc-systems">Pumps in (U)HPLC systems</h2>
+<p>Pumps are mechanical devices that transfer mobile phases from low-pressure reservoirs to high-pressure areas in the system. Their primary function is to maintain a constant flow of the mobile phase through the system, regardless of back pressure caused by flow resistance.</p>
+<p>Reciprocating pumps, which are a type of positive displacement pump, are commonly used in (U)HPLC systems. There are two basic designs of reciprocating pumps: piston and plunger. Plunger pumps are the most commonly used in (U)HPLC systems, but some instrument vendors may use piston designs. It is important to note that the two types are not interchangeable, although instrument documents may mistakenly label them as such.</p>
+<p>In plunger pumps, a smooth cylindrical plunger slides through a stationary high-pressure seal. In contrast, piston pumps have a high-pressure seal that reciprocates with the piston. Understanding the differences between the two designs is crucial for proper use and maintenance of (U)HPLC systems.</p>
+</section>
+<section id="mechanism-of-action-understanding-reciprocating-pumps" class="level2">
+<h2 class="anchored" data-anchor-id="mechanism-of-action-understanding-reciprocating-pumps">Mechanism of Action: Understanding Reciprocating Pumps</h2>
+<p>As we have learned about the differences between plunger and piston-based pumps, let’s delve into the mechanism of action of a reciprocating pump. A pump typically consists of a cylinder with a piston or plunger inside, along with check valves at the inlet and outlet. For the purpose of this explanation, we will focus on the plunger design, but the same mechanism of action applies to piston-based pumps as well.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="plunger-vs-piston.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>During the suction stroke, the plunger moves to the right (see the figure), causing the chamber inside the cylinder to expand. This expansion results in a drop in pressure, which opens the suction valve and allows fluid to enter through the inlet. The check valves prevent the fluid from flowing back and direct it through the pump. As the suction valve opens, the discharge valve closes.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="mechanism-of-pump.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>On the discharge stroke, the plunger moves towards the left (see the figure), pushing the fluid in the cylinder and increasing the pressure. This pressure increase closes the suction valve and opens the discharge valve, allowing the fluid to exit the pump. This process repeats continuously, resulting in a steady flow of fluid through the pump.</p>
+<p>Overall, the reciprocating pump’s mechanism of action is straightforward and efficient, making it a popular choice for applications that require precise and consistent flow rates, such as in (U)HPLC systems.</p>
+</section>
+<section id="mechanisms-for-driving-the-pumps-crankshaft-vs.-camshaft" class="level2">
+<h2 class="anchored" data-anchor-id="mechanisms-for-driving-the-pumps-crankshaft-vs.-camshaft">Mechanisms for Driving the Pumps: Crankshaft vs.&nbsp;Camshaft</h2>
+<p>In a pump, the piston or plunger is responsible for creating the pressure difference that moves fluid through the system. To achieve this, the piston must be driven with a motor. There are two primary mechanisms that can be used to drive the piston: a crankshaft or a camshaft.</p>
+<p>A crankshaft is a simple mechanism that is commonly used in industrial applications. It is connected to an electric motor and rotates to generate the reciprocating motion of the piston. The crankshaft is connected to a connecting rod, which in turn is connected to the piston. As the motor turns the crankshaft, the connecting rod moves back and forth, causing the piston to move in and out of the cylinder.</p>
+<p>In some pumps, the motor may be directly connected to the piston/plunger, eliminating the need for a crankshaft and connecting rod. This approach is often used in smaller pumps where simplicity and compactness are critical.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="cam-mechanism.jpg" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>A camshaft is another mechanism that can be used to drive a piston pump. It uses a series of cams to generate the reciprocating motion of the piston. The cams are mounted on a rotating shaft and are shaped like oblong circles. The shape of the cam determines the timing and speed of the piston’s motion.</p>
+<p>Camshaft-driven piston pumps are often used in applications where precise control of flow rate and pressure is required. The camshaft can be adjusted to change the shape of the cams, which in turn changes the motion of the piston. This allows for fine-tuning of the pump’s performance. However, camshaft-driven pumps can be more complex and expensive than crankshaft-driven pumps, so they are not as commonly used in industrial applications.</p>
+<p>In conclusion, the choice of mechanism for driving a piston/plunger pump will depend on the specific requirements of the application. Crankshaft mechanisms are more commonly used in industrial applications due to their simplicity and lower cost, while camshaft mechanisms are often used in research and analytical applications, especially with UHPLCs, where precise control of flow rate and pressure is required.</p>
+<p>Notes:</p>
+<p><a href="https://www.youtube.com/watch?v=4OJTN0M1DBk&amp;ab_channel=MachineTechVideoBlog">Pumps-mechanism</a></p>
+<p><a href="https://www.youtube.com/watch?v=PGDDQbegHMg&amp;ab_channel=jboogz26">Seal and Plunger</a></p>
+<p><a href="https://www.explainthatstuff.com/cranks-and-cams.html">Cam vs Crank</a></p>
+<p><a href="https://www.youtube.com/watch?v=vFUVHssMnx4&amp;ab_channel=AgilentTechnologies">Plunger change - Agilent</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
