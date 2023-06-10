@@ -1,8 +1,8 @@
 ---
 title: "Understanding (U)HPLC Pumps: Piston vs Plunger and Cam vs Crankshaft Driven Mechanisms"
 author: "Nazmul Alam"
-date: "2023-06-06"
-categories: [HPLC, History]
+date: "2023-06-09"
+categories: [(U)HPLC, Pumps]
 image: "Ts-experiment.jpg"
 ---
 
@@ -43,3 +43,13 @@ A camshaft is another mechanism that can be used to drive a piston pump. It uses
 Camshaft-driven piston pumps are often used in applications where precise control of flow rate and pressure is required. The camshaft can be adjusted to change the shape of the cams, which in turn changes the motion of the piston. This allows for fine-tuning of the pump's performance. However, camshaft-driven pumps can be more complex and expensive than crankshaft-driven pumps, so they are not as commonly used in industrial applications.
 
 In conclusion, the choice of mechanism for driving a piston/plunger pump will depend on the specific requirements of the application. Crankshaft mechanisms are more commonly used in industrial applications due to their simplicity and lower cost, while camshaft mechanisms are often used in research and analytical applications, especially with UHPLCs, where precise control of flow rate and pressure is required.
+
+Notes:
+
+[Pumps-mechanism](https://www.youtube.com/watch?v=4OJTN0M1DBk&ab_channel=MachineTechVideoBlog)
+
+[Seal and Plunger](https://www.youtube.com/watch?v=PGDDQbegHMg&ab_channel=jboogz26)
+
+[Cam vs Crank](https://www.explainthatstuff.com/cranks-and-cams.html)
+
+[Plunger change - Agilent](https://www.youtube.com/watch?v=vFUVHssMnx4&ab_channel=AgilentTechnologies)
