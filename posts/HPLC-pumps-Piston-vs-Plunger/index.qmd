@@ -2,8 +2,8 @@
 title: "Understanding (U)HPLC Pumps: Piston vs Plunger and Cam vs Crankshaft Driven Mechanisms"
 author: "Nazmul Alam"
 date: "2023-06-09"
-categories: [(U)HPLC, Pumps]
-image: "Ts-experiment.jpg"
+categories: [HPLC, Pumps]
+#image: "Ts-experiment.jpg"
 ---
 
 ## Pumps in (U)HPLC systems
