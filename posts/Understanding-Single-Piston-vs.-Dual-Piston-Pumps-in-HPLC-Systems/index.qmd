@@ -10,11 +10,9 @@ categories: [HPLC, Pumps]
 
 The check valves play a crucial role in controlling the flow direction of the mobile phase in the pump. They consist of a ruby ball and a sapphire seat that are lapped to ensure a tight seal when the ball is resting on it. The valves operate based on pressure and gravity to open and close.
 
-![](ball-valve.png)
+![](ball-valve.png){fig-align="center"}
 
-jpg valve
-
-![](ball-valve.jpg) Despite their importance, check valves are often the least reliable parts of the pump. The most common design includes a ruby ball and sapphire seat that are slightly ground or "lapped" to match the curvature of the ball for better sealing. When the pressure beneath the check valve is higher than above it, the ball is lifted from the seat, allowing solvent to flow through the hole in the seat. When the pressure is equal on both sides of the valve or higher on the top, the ball settles onto the seat, providing a seal.
+Despite their importance, check valves are often the least reliable parts of the pump. The most common design includes a ruby ball and sapphire seat that are slightly ground or "lapped" to match the curvature of the ball for better sealing. When the pressure beneath the check valve is higher than above it, the ball is lifted from the seat, allowing solvent to flow through the hole in the seat. When the pressure is equal on both sides of the valve or higher on the top, the ball settles onto the seat, providing a seal.
 
 Inlet check valves are more prone to sticking than outlet check valves because of the pressure within the pump. To address this issue, many pumps now feature "active" check valves on the pump inlet. These valves use mechanical assistance, such as a spring and solenoid-actuated lifting device, to ensure proper seating and prevent sticking. The active check valve design is more reliable and is not subject to sticking when using acetonitrile.
 

@@ -2,7 +2,9 @@
   {
     "listing": "/blog.html",
     "items": [
-      "/posts/Understanding Single-Piston vs. Dual-Piston Pumps in HPLC Systems/index.html",
+      "/posts/Binary-vs-Quaternary-Pump/index.html",
+      "/posts/Types-of-HPLC-pumps-based-on-flow-rate/index.html",
+      "/posts/Understanding-Single-Piston-vs.-Dual-Piston-Pumps-in-HPLC-Systems/index.html",
       "/posts/HPLC-pumps-Piston-vs-Plunger/index.html",
       "/posts/history-hplc/index.html"
     ]

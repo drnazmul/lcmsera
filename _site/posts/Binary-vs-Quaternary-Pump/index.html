@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nazmul Alam">
+<meta name="dcterms.date" content="2023-06-11">
+
+<title>Binary versus Quarternary Pumps in (U)HPLC Systems</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../courses/index.html">
+ <span class="menu-text">Courses</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://facebook.com/lcmsera"><i class="bi bi-facebook" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/@lcmsera"><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Binary versus Quarternary Pumps in (U)HPLC Systems</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">HPLC</div>
+                <div class="quarto-category">Pumps</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nazmul Alam </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 11, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#binary-pump-or-high-pressure-gradient-pump" id="toc-binary-pump-or-high-pressure-gradient-pump" class="nav-link active" data-scroll-target="#binary-pump-or-high-pressure-gradient-pump">Binary pump or High Pressure Gradient Pump</a></li>
+  <li><a href="#what-is-a-quaternary-pump-or-low-pressure-mixing-lpm-pump" id="toc-what-is-a-quaternary-pump-or-low-pressure-mixing-lpm-pump" class="nav-link" data-scroll-target="#what-is-a-quaternary-pump-or-low-pressure-mixing-lpm-pump">What Is a Quaternary Pump or Low Pressure Mixing (LPM) pump</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>Hey there! Let’s talk about the different ways scientists separate compounds in liquid chromatography (LC). There are two main methods: isocratic and gradient.</p>
+<p>Isocratic separation just means using a constant mixture of solvents to separate compounds. It’s pretty straightforward and easy to do, but it might not always give the best results.</p>
+<p>Gradient separation, on the other hand, uses a changing mixture of solvents to improve the separation process. This can lead to better peak shapes and faster analysis times. When scientists are developing a gradient mixing method, they can use either a binary or quaternary pump.</p>
+<p>Binary pumps mix solvents at high pressure, which is great for high-pressure gradient (HPG) analysis. Quaternary pumps, on the other hand, mix solvents at low pressure.</p>
+<section id="binary-pump-or-high-pressure-gradient-pump" class="level2">
+<h2 class="anchored" data-anchor-id="binary-pump-or-high-pressure-gradient-pump">Binary pump or High Pressure Gradient Pump</h2>
+<p>Do you know what is the difference between binary and quaternary pumps?</p>
+<p>Binary pumps are the most popular pumps used in high-performance liquid chromatography (HPLC). They are known for their ability to create gradients using two solvents. They’re perfect for high-throughput and high-resolution (U)HPLC, or LC-MS applications.</p>
+<p>So, how do binary pumps work? Well, they use two pump blocks and two solvent inlet lines to mix two individual solvents at high pressure. The two solvents are mixed in a mixing chamber after the pump heads, creating a high-pressure proportioning environment. This means that the solvents are already under pressure before they reach the mix-point where the mixing occurs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="binary.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>Let’s say you’re running a method that uses Solvent A and Solvent B at a ratio of 70:30. If your flow rate is 1.0 mL/min, the pumps would deliver 0.70 mL/min for Solvent A and 0.30 mL/min for Solvent B.</p>
+<p>Binary pumps are great for routine and high-throughput applications that require a two-solvent gradient. They’re easy to use and can be controlled using software. Plus, they’re capable of creating complex gradients that can be changed over time.</p>
+</section>
+<section id="what-is-a-quaternary-pump-or-low-pressure-mixing-lpm-pump" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-a-quaternary-pump-or-low-pressure-mixing-lpm-pump">What Is a Quaternary Pump or Low Pressure Mixing (LPM) pump</h2>
+<p>Hey there! Today, I am going to talk about quaternary pumps. These pumps are used for separating different substances efficiently. The cool thing about them is that they can use up to four solvents for gradient separation.</p>
+<p>Basically, these pumps mix the solvents at low pressure, which is why they’re sometimes called low-pressure mixing (LPM) pumps or low-pressure gradient (LPG) pumps. Don’t worry if these terms sound confusing, they all mean the same thing.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="quarternery.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+<p>So, what is a quaternary pump? It’s a pump that uses up to four different solvents to create gradients. These pumps are great for method development or when you need flexibility in your mobile phase composition. They use a single pump block and four solvent inlet lines to mix the solvents. The first plunger withdraws the solvents under low pressure, while the second plunger pushes an accurate flow rate under high pressure into the system. The mixing of the solvents occurs inside the first plunger cylinder, or a mixer can be installed after the proportioning valve in some designs. But, what’s a proportioning valve? It’s a fancy piece of equipment that opens the valve of each solvent to deliver an equivalent amount to the pump heads. As an example, Let’s say you’re a scientist, and you need to mix solvent A, B, C, and D in equal parts. The proportioning valve would open the valve of each solvent to deliver an equivalent sized packet of solvent to the pump heads.</p>
+<p>Since these pumps use low-pressure mixing to create gradients. This means that solvent degassing or the use of a vacuum degasser is necessary. The pumps can be controlled by software and offer the flexibility to change the composition of the mobile phase over time. They’re perfect for scientists who need to run methods with different solvent ratios. So, why are these pumps so great? Well, they’re perfect for separating complex mixtures because they can use different solvents to create a gradient that separates the different substances. This means that you can get more accurate results and save time.</p>
+<p>Another thing that’s awesome about quaternary pumps is that they’re really versatile. They can be used in a variety of industries, from pharmaceuticals to food and beverage.</p>
+<p>One of the drawbacks is that they have a higher dwell volume. This means that it takes longer for the system to re-equilibrate after each sample is completed. It’s like waiting for a pot of water to boil - it takes longer if there’s more water in the pot.</p>
+<p>Another issue with LPMs is that the extra dwell volume can create an isocratic hold if it’s not taken into account during a method transfer. This can cause problems down the line, so it’s important to be aware of it.</p>
+<p>In summary, both binary and quaternary pumps have their pros and cons. It’s up to you to decide which one is best for your specific needs. But now you know a little more about these pumps, and that’s always a good thing!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

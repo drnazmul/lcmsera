@@ -15,6 +15,9 @@ about:
       href: mailto:lcmsera@gmail.com
 ---
 
+::: {#about-block}
+:::
+
 LCMS era is a leading training and consulting firm that specializes in providing services on integrating HPLC/UHPLC to pharma, biotech, and instrument companies.
 
 With a team of experienced and highly qualified professionals, LCMS era is dedicated to helping organizations integrate HPLC/UHPLC, LC-MS in their laboratories with advice on the purchase, setup, and guiding preventive actions.
