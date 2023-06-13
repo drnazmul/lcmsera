@@ -9,7 +9,7 @@
 <meta name="author" content="Nazmul Alam">
 <meta name="dcterms.date" content="2023-06-10">
 
-<title>Understanding Single-Piston vs.&nbsp;Dual-Piston Pumps in HPLC Systems</title>
+<title>HPLC Separations: Isocratic vs.&nbsp;Gradient</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -111,10 +111,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Understanding Single-Piston vs.&nbsp;Dual-Piston Pumps in HPLC Systems</h1>
+      <h1 class="title">HPLC Separations: Isocratic vs.&nbsp;Gradient</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">HPLC</div>
-                <div class="quarto-category">Pumps</div>
+                <div class="quarto-category">separations</div>
               </div>
                   </div>
   </div>
@@ -144,20 +144,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#single-plunger-reciprocating-pumps" id="toc-single-plunger-reciprocating-pumps" class="nav-link active" data-scroll-target="#single-plunger-reciprocating-pumps">Single-Plunger Reciprocating Pumps</a></li>
-  <li><a href="#dual-pistonplunger-pumps" id="toc-dual-pistonplunger-pumps" class="nav-link" data-scroll-target="#dual-pistonplunger-pumps">Dual piston/plunger pumps</a>
-  <ul class="collapse">
-  <li><a href="#dual-plunger-in-parallel" id="toc-dual-plunger-in-parallel" class="nav-link" data-scroll-target="#dual-plunger-in-parallel">Dual-plunger in parallel</a></li>
-  <li><a href="#dual-plunger-in-series" id="toc-dual-plunger-in-series" class="nav-link" data-scroll-target="#dual-plunger-in-series">Dual plunger in-series</a></li>
-  </ul></li>
-  <li><a href="#check-valves" id="toc-check-valves" class="nav-link" data-scroll-target="#check-valves">Check Valves</a></li>
-  <li><a href="#the-pump-seal" id="toc-the-pump-seal" class="nav-link" data-scroll-target="#the-pump-seal">The pump seal</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content quarto-banner-title-block" id="quarto-document-content">
@@ -165,52 +152,17 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="single-plunger-reciprocating-pumps" class="level2">
-<h2 class="anchored" data-anchor-id="single-plunger-reciprocating-pumps">Single-Plunger Reciprocating Pumps</h2>
-<p>The basic design of a pump for early LC systems featured a single piston or plunger in the pump head, making it a single-piston/plunger pump. Its flow rate was controlled by adjusting the piston stroke with a large micrometer mounted on the pump. This type of pump was compact, affordable, and continuously delivered, making it a staple in HPLC solvent delivery. However, the pulsed flow caused by the piston recharge cycle was a weakness of the single-piston reciprocating pump.</p>
-<p>The single-acting pumps displaced only one volume of the mobile phase per cycle, resulting in large pulses in flow and pressure. This was not ideal for maintaining a constant flow and even pressure, which was necessary for satisfactory detector performance. Early HPLC systems addressed this issue by including pulse dampers, while later designs incorporated shaped driving camshafts and variable-speed motors to reduce the fill portion of the pump cycle and improve delivery smoothness. Despite these improvements, the flow and pressure challenges inherent in single-piston pumps were not completely resolved.</p>
-</section>
-<section id="dual-pistonplunger-pumps" class="level2">
-<h2 class="anchored" data-anchor-id="dual-pistonplunger-pumps">Dual piston/plunger pumps</h2>
-<p>Dual-plunger pumps are a solution to the issue of flow and delivery pulses in single-plunger pumps. These pumps are widely used today and come in two types: in-parallel and in-series.</p>
-<section id="dual-plunger-in-parallel" class="level3">
-<h3 class="anchored" data-anchor-id="dual-plunger-in-parallel">Dual-plunger in parallel</h3>
+<p>When it comes to HPLC separations, there are two modes: isocratic and gradient. Isocratic elution refers to a constant concentration of the mobile phase throughout the chromatographic process. This method is simple and straightforward, but it has its limitations. Late-eluting peaks tend to become broad and flat, making them difficult to recognize. Additionally, selectivity does not change with column dimensions, meaning peaks elute in the same order.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="in-parallel.png" class="img-fluid figure-img"></p>
+<p><img src="isocratic-gradient.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
-<p>In-parallel pumps use two pumps that operate 180° out of phase to counteract the pulses of a single-plunger pump. These pumps are driven by a single cam, with one pump head filling while the other delivers. The output of the pumps is combined to ensure a constant flow, making them highly effective in LC pump design. Although less common in the analytical pumps market, dual-piston in-parallel pumps have been reintroduced in some UHPLC pumps, such as the Shimadzu AD models and the Thermo Vanquish pumps.</p>
-</section>
-<section id="dual-plunger-in-series" class="level3">
-<h3 class="anchored" data-anchor-id="dual-plunger-in-series">Dual plunger in-series</h3>
-<p>The dual-plunger in-series pump, also known as the accumulator plunger design, is commonly used in modern (U)HPLC systems. It consists of two plungers, with one delivering a single or mixed solvent to the other, known as the high-pressure plunger or accumulator. The two plungers have different displacement volumes and deliver at different rates, allowing for accurate compositional control and less pulsation. The pump has three check valves - an outlet, an inlet, and a middle check valve that acts as an inlet check valve for the top plunger and an outlet check valve for the bottom plunger. In one cycle, the top plunger delivers 1 mL/min to the column, with the outlet check valve open and the middle check valve closed, while the bottom plunger fills at 2 mL/min with an inlet check valve open and the middle check valve closed. In the alternate cycle, the bottom plunger delivers at 2 mL/min, with 1 mL/min serving to fill the top piston and the other 1 mL/min flowing to the column. Thus, 1 mL/min of mobile phase always flows to the column.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="in-sereis.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>The accumulator plunger pump is preferred for its highly accurate compositional control and less pulsation, making it a popular choice for many (U)HPLC systems. It is used in various systems, including Agilent’s 1100, 1200, and 1260 with single motor design, Agilent 1290 with independent plunger drives, and Waters Alliance and Acquity UPLC instruments with independent plunger drives. The pump design has only three check valves, which is argued by manufacturers to enhance reliability compared to the dual in-parallel design. Additionally, the accumulator plunger pump usually has only one traditional ball-type check valve between the two plunger chambers, as there is no need for an outlet check valve since either the top or bottom plunger is always supplying flow to the column.</p>
-</section>
-</section>
-<section id="check-valves" class="level2">
-<h2 class="anchored" data-anchor-id="check-valves">Check Valves</h2>
-<p>The check valves play a crucial role in controlling the flow direction of the mobile phase in the pump. They consist of a ruby ball and a sapphire seat that are lapped to ensure a tight seal when the ball is resting on it. The valves operate based on pressure and gravity to open and close.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="ball-valve.png" class="img-fluid figure-img"></p>
-</figure>
-</div>
-<p>Despite their importance, check valves are often the least reliable parts of the pump. The most common design includes a ruby ball and sapphire seat that are slightly ground or “lapped” to match the curvature of the ball for better sealing. When the pressure beneath the check valve is higher than above it, the ball is lifted from the seat, allowing solvent to flow through the hole in the seat. When the pressure is equal on both sides of the valve or higher on the top, the ball settles onto the seat, providing a seal.</p>
-<p>Inlet check valves are more prone to sticking than outlet check valves because of the pressure within the pump. To address this issue, many pumps now feature “active” check valves on the pump inlet. These valves use mechanical assistance, such as a spring and solenoid-actuated lifting device, to ensure proper seating and prevent sticking. The active check valve design is more reliable and is not subject to sticking when using acetonitrile.</p>
-<p>It is worth noting that the inlet check valves of many modern UHPLC pumps use active check valves, regardless of whether the in-parallel or accumulator-plunger design is employed. This ensures consistent and reliable performance, critical for accurate and precise separation and analysis in chromatography.</p>
-</section>
-<section id="the-pump-seal" class="level2">
-<h2 class="anchored" data-anchor-id="the-pump-seal">The pump seal</h2>
-<p>The pump seal is an essential component in preventing leakage of the mobile phase and air from entering during filling. It consists of a polymeric ring that encircles the plunger with a groove containing a spring on the high-pressure side. The spring helps to create a better seal by pulling the lip of the seal against the piston. The high liquid pressure in the pump chamber also aids in pushing the lip of the seal against the surface of the plunger, acting like a squeegee to keep the mobile phase within the pump chamber. Although the sealing process is not perfect, it allows a thin film of mobile phase to remain on the plunger surface, lubricating the plunger-seal interface and preventing premature wear of the seal. Proper maintenance and replacement of the pump seal are crucial for optimal performance and longevity of the pump.</p>
+<p>Gradient elution, on the other hand, involves changing the composition of solvents either continuously or stepwise. This method allows for sharper peaks throughout the chromatogram and can achieve separations that are not possible with isocratic elution. Gradients are designed to start with weak elution conditions and end with strong elution conditions, providing adequate compound retention and elution.</p>
+<p>There are different types of gradient designs, including linear and step gradients. Linear gradients are the most commonly used and help keep each compound’s band broadening to a minimum. Compounds stick to the column media until the solvent polarity is strong enough to dissolve and elute them. Step gradients are more challenging to use but can provide a complete separation of targeted compounds in narrow bands while using less solvent than linear gradients or isocratic elution.</p>
+<p>In summary, both isocratic and gradient elution have their advantages and disadvantages. Isocratic elution is simple but limited, while gradient elution provides sharper peaks and more flexibility. Understanding the differences between these two modes can help chemists choose the best method for their specific separation needs.</p>
 
 
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

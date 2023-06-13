@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Nazmul Alam">
+<meta name="dcterms.date" content="2023-06-12">
+
+<title>(U)HPLC definition and principles</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../img/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../img/logo.png" alt="" class="navbar-logo">
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../courses/index.html">
+ <span class="menu-text">Courses</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://facebook.com/lcmsera"><i class="bi bi-facebook" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/@lcmsera"><i class="bi bi-youtube" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">(U)HPLC definition and principles</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">HPLC</div>
+                <div class="quarto-category">Basics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Nazmul Alam </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">June 12, 2023</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#what-is-hplc-or-high-performance-liquid-chromatography" id="toc-what-is-hplc-or-high-performance-liquid-chromatography" class="nav-link active" data-scroll-target="#what-is-hplc-or-high-performance-liquid-chromatography">What is HPLC or High performance liquid chromatography?</a></li>
+  <li><a href="#what-is-uhplc-or-uplc" id="toc-what-is-uhplc-or-uplc" class="nav-link" data-scroll-target="#what-is-uhplc-or-uplc">What is UHPLC or UPLC?</a></li>
+  <li><a href="#the-science-behind-hplc-how-liquid-chromatography-works" id="toc-the-science-behind-hplc-how-liquid-chromatography-works" class="nav-link" data-scroll-target="#the-science-behind-hplc-how-liquid-chromatography-works">The Science Behind HPLC: How Liquid Chromatography Works</a></li>
+  <li><a href="#suitable-samples-for-hplc" id="toc-suitable-samples-for-hplc" class="nav-link" data-scroll-target="#suitable-samples-for-hplc">Suitable Samples for HPLC</a></li>
+  <li><a href="#application-areas-of-uhplc" id="toc-application-areas-of-uhplc" class="nav-link" data-scroll-target="#application-areas-of-uhplc">Application areas of (U)HPLC</a></li>
+  <li><a href="#common-parameters-used-in-uhplc" id="toc-common-parameters-used-in-uhplc" class="nav-link" data-scroll-target="#common-parameters-used-in-uhplc">Common Parameters Used in (U)HPLC</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<section id="what-is-hplc-or-high-performance-liquid-chromatography" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-hplc-or-high-performance-liquid-chromatography">What is HPLC or High performance liquid chromatography?</h2>
+<p>Hey there, let’s talk about high-performance liquid chromatography, or HPLC for short. It’s a fancy way of saying that we use a machine to separate and analyze (identify, and quantify) different components of a mixture.</p>
+<p>Why do we use HPLC? Well, it’s a really accurate and sensitive way to analyze mixtures. For example, it’s commonly used in the pharmaceutical industry to test the purity of drugs. It’s also used in environmental testing to detect pollutants in water and soil.</p>
+<p>HPLC can be used to analyze a wide range of mixtures, from small molecules like drugs and amino acids, to large molecules like proteins and DNA. And the best part is that it’s relatively quick and easy to use once you get the hang of it.</p>
+<p>Of course, like any scientific technique, there are some limitations and challenges to using HPLC. For example, it can be expensive to set up and maintain the equipment, and it requires a lot of expertise to interpret the results. But overall, HPLC is a really powerful tool that has revolutionized the way we analyze mixtures in the lab.</p>
+</section>
+<section id="what-is-uhplc-or-uplc" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-uhplc-or-uplc">What is UHPLC or UPLC?</h2>
+<p>Ultra High Performance Liquid Chromatography (UHPLC), also known as Ultra Performance Liquid Chromatography (UPLC), is an advanced technique used in analytical chemistry to achieve better separation efficiency, improved resolution and shorter analysis times.. This innovative method uses HPLC columns with mean particle size diameters of less than two microns, combined with new commercially available instrumentation to achieve optimal linear velocities.</p>
+<p>One of the key benefits of UHPLC is its ability to provide superior resolution. This is achieved by using columns with smaller particle sizes, which allows for more efficient separation of compounds. The increased resolution provided by UHPLC allows for the detection of trace amounts of compounds that would otherwise go unnoticed.</p>
+<p>Another advantage of UHPLC is its ability to reduce analysis times. With traditional HPLC methods, analysis times can take hours or even days. UHPLC, on the other hand, can deliver results in a matter of minutes. This is particularly useful in industries such as pharmaceuticals, where time is of the essence.</p>
+</section>
+<section id="the-science-behind-hplc-how-liquid-chromatography-works" class="level2">
+<h2 class="anchored" data-anchor-id="the-science-behind-hplc-how-liquid-chromatography-works">The Science Behind HPLC: How Liquid Chromatography Works</h2>
+<p>How does HPLC work? Essentially, it involves pumping a liquid mixture through a column filled with tiny particles that have different properties, allowing them to interact differently with the mixture components. As the mixture passes through the column, the components separate and are detected by a detector at the end of the column.</p>
+<p><img src="hplc-components.png" class="img-fluid"></p>
+<p>The HPLC instrument typically consists of four major components: a pump, autosampler, column, and detector. The pump pushes the mobile phase (usually a solvent) through the system at a specified flow rate, while the autosampler injects the sample into the mobile phase. The sample travels with the mobile phase from the injection point to the head of the column, where the physical separation of the compounds occurs on the stationary phase. After elution from the column, the separated sample components travel to the detector, which generates an electrical signal based on specific properties of the analytes. The signal is then translated by a computerized data system into a chromatogram of analyte signal versus time.</p>
+<p>The stationary phase in HPLC can be a solid material packed into the column or a liquid adsorbed onto a solid support. The choice of stationary phase and mobile phase is crucial for the separation and analysis of compounds, and the method can be adjusted to optimize the separation based on the specific requirements of the analysis.</p>
+</section>
+<section id="suitable-samples-for-hplc" class="level2">
+<h2 class="anchored" data-anchor-id="suitable-samples-for-hplc">Suitable Samples for HPLC</h2>
+<p>Here, we will discuss the suitable samples for (U)HPLC analysis.</p>
+<p>(U)HPLC analysis has no volatility issues, meaning it can analyze samples that are not affected by changes in temperature. However, the analyte must be soluble in the mobile phase. The mobile phase is the liquid that flows through the column and carries the sample components. Therefore, the solubility of the sample in the mobile phase is crucial for successful analysis.</p>
+<p>(U)HPLC can analyze samples over a wide polarity range and is capable of analyzing ionic samples. The mobile phase components are selected to ensure sample solubility. The polarity of the mobile phase can be adjusted to separate components based on their polarity. This makes HPLC a versatile technique for analyzing a wide range of samples.</p>
+<p>(U)HPLC has no real upper molecular weight limit, meaning it can analyze large molecules such as proteins. Large proteins of many thousands of Daltons may be analyzed, making (U)HPLC a valuable tool in protein analysis. However, solubility in the mobile phase may preclude the analysis of very large molecules.</p>
+</section>
+<section id="application-areas-of-uhplc" class="level2">
+<h2 class="anchored" data-anchor-id="application-areas-of-uhplc">Application areas of (U)HPLC</h2>
+<p>As technology advances, the need for accurate and reliable analysis of various substances becomes increasingly important. One such method for analysis is High-Performance Liquid Chromatography (HPLC). But what types of samples are suitable for HPLC analysis?</p>
+<p>Firstly, HPLC is commonly used in the pharmaceutical industry for drug analysis. This includes testing for impurities, degradation products, and determining the purity of the drug substance. Therefore, samples such as tablets, capsules, and injections can be analyzed using HPLC.</p>
+<p>In addition to pharmaceuticals, HPLC is also used in the food industry. For example, HPLC can be used to analyze food additives, such as preservatives and colorants, as well as contaminants like pesticides and mycotoxins. Samples such as fruits, vegetables, grains, and meats can all be analyzed using HPLC.</p>
+<p>Environmental testing is another area where HPLC is commonly used. HPLC can be used to analyze water samples for contaminants such as heavy metals, pesticides, and herbicides. Air samples can also be analyzed for pollutants such as volatile organic compounds (VOCs) and particulate matter.</p>
+<p>Finally, HPLC can be used in forensic analysis. For example, HPLC can be used to analyze blood and urine samples for drugs of abuse or to determine the presence of alcohol. Additionally, HPLC can be used to analyze DNA samples for forensic purposes.</p>
+<p>In conclusion, HPLC is a versatile analytical technique that can be used in a variety of industries and applications. Samples such as pharmaceuticals, food, water, air, and forensic samples can all be analyzed using HPLC. The ability to accurately and reliably analyze these samples is crucial for ensuring the safety and quality of various products and substances.</p>
+</section>
+<section id="common-parameters-used-in-uhplc" class="level2">
+<h2 class="anchored" data-anchor-id="common-parameters-used-in-uhplc">Common Parameters Used in (U)HPLC</h2>
+<p>Here are some common parameters used in HPLC:</p>
+<dl>
+<dt>Mobile phase</dt>
+<dd>
+<p>The liquid that is pumped through the column to separate the sample components. It can be a single solvent or a mixture of solvents.</p>
+</dd>
+<dt>Stationary phase</dt>
+<dd>
+<p>The solid particles that are packed into the column and interact with the sample components to separate them.</p>
+</dd>
+<dt>Column dimensions</dt>
+<dd>
+<p>The length, diameter, and particle size of the column can affect the separation efficiency and speed.</p>
+</dd>
+<dt>Flow rate</dt>
+<dd>
+<p>The rate at which the mobile phase is pumped through the column. It can affect the separation efficiency and resolution.</p>
+</dd>
+<dt>Injection volume</dt>
+<dd>
+<p>The amount of sample injected onto the column. It can affect the sensitivity and peak shape.</p>
+</dd>
+<dt>Detector type</dt>
+<dd>
+<p>The instrument used to detect the sample components as they elute from the column. Common detectors include UV-Vis, fluorescence, and mass spectrometry.</p>
+</dd>
+<dt>Wavelength or mass range</dt>
+<dd>
+<p>The specific range of wavelengths or masses that the detector is set to detect.</p>
+</dd>
+<dt>Gradient program</dt>
+<dd>
+<p>The specific pattern of changing mobile phase composition over time. It can affect the separation efficiency and resolution.</p>
+</dd>
+<dt>Temperature</dt>
+<dd>
+<p>The temperature of the column and detector can affect the separation efficiency and selectivity.</p>
+</dd>
+<dt>pH</dt>
+<dd>
+<p>The pH of the mobile phase can affect the separation efficiency and selectivity for certain types of samples.</p>
+</dd>
+</dl>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

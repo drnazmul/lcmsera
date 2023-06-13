@@ -47,3 +47,13 @@ One of the drawbacks is that they have a higher dwell volume. This means that it
 Another issue with LPMs is that the extra dwell volume can create an isocratic hold if it's not taken into account during a method transfer. This can cause problems down the line, so it's important to be aware of it.
 
 In summary, both binary and quaternary pumps have their pros and cons. It's up to you to decide which one is best for your specific needs. But now you know a little more about these pumps, and that's always a good thing!
+
+Referencs: 
+
+1. [Dong](https://www.chromatographyonline.com/view/modern-hplc-pumps-perspectives-principles-and-practices)
+
+2. [video](https://www.youtube.com/@ardentscientific7080/videos)
+
+3. [Dong2](https://www.chromatographyonline.com/view/how-does-it-work-part-i-pumps)
+
+4. [paper](https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/ansa.202100007)
