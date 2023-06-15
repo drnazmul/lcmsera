@@ -5,6 +5,9 @@ date: "2023-06-13"
 categories: [FDA, MV]
 #image: "Ts-experiment.jpg"
 ---
+:::{.callout-note}
+This is based based on the original FDA [guideline](https://www.fda.gov/regulatory-information/search-fda-guidance-documents/m10-bioanalytical-method-validation-and-study-sample-analysis)
+:::
 
 # Introduction
 
@@ -86,7 +89,7 @@ This guidance provides recommendations for validating bioanalytical methods for 
 
 Cross validation is required to demonstrate how the reported data are related when multiple bioanalytical methods and/or multiple bioanalytical laboratories are involved
 
-# CHROMATOGRAPHY
+# Chromatography
 
 ## Reference Standards
 
@@ -386,7 +389,7 @@ Cross validation is required to demonstrate how the reported data are related wh
 
 -   All of this information should be submitted in the Bioanalytical Report for comparative BA/BE studies.
 
-# INCURRED SAMPLE REANALYSIS
+# Incurred sample reanalysis
 
 -   Incurred sample reanalysis (ISR) is used to verify the reliability of reported sample analyte concentrations.
 
@@ -448,7 +451,7 @@ Bias can be assessed using Bland-Altman plots or Deming regression. Other method
 
 Using multiple bioanalytical methods in one comparative BA/BE study is strongly discouraged.
 
-# ADDITIONAL CONSIDERATIONS
+# Additinoal Consideratoins
 
 ## Methods for Analytes That Are Also Endogenous Molecules
 
@@ -514,6 +517,4 @@ Validation of an analytical method for an endogenous analyte requires careful co
 
 -   Perform recovery experiments at low, medium, and high concentrations.
 
--   As an expert copywriter with 20+ years of experience, I'll remove filler words, jargon, and corporate language.
-
--   I'll correct misspellings and grammar errors to provide clear and concise results.
+ 
