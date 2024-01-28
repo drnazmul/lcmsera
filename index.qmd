@@ -31,3 +31,14 @@ Our principal consultant, Dr. Nazmul Alam, is a highly experienced scientist and
 At LCMS era, we believe that effective training and consulting services are critical to the success of any organization. That's why we provide customized training programs that are tailored to meet the unique needs of our clients. Our training programs cover a range of topics, including HPLC/UHPLC, LC-MS, and sample preparation techniques.
 
 In conclusion, LCMS era is a trusted training and consulting firm that provides expert consulting services on HPLC/UHPLC and pharm analysis to pharma, biotech, and instrument companies. With our experienced team and customized training programs, we are committed to helping organizations integrate HPLC/UHPLC, LC-MS in their laboratories and solve their analytical challenges. Contact us today to learn more about our services and how we can help your organization succeed.
+
+https://cdk-r.github.io/cdkr/reference/index.html
+
+https://www.researchgate.net/publication/338692047_The_rcdk_and_cluster_R_packages_applied_to_drug_candidate_selection
+
+https://riveradelgado.com/post/2021/04/18/chemistry-in-r/
+
+Listing:
+https://robertmitchellv.com/blog/2022-08-building-with-quarto/building-with-quarto.html
+
+
